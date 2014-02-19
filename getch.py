@@ -1,3 +1,9 @@
+## Used to get key input without refreshing stdin.
+## Compeltely and utterly stolen from here:
+## http://code.activestate.com/recipes/134892-getch-like-unbuffered-character-reading-from-stdin/
+## Should work on both Windows and Mac/Unix systems, but I haven't tested on Windows.
+
+
 class _Getch:
     """Gets a single character from standard input.  Does not echo to the
 screen."""
