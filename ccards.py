@@ -5,6 +5,8 @@ import logging
 import sys
 from getch import getch
 jieba.setLogLevel(logging.INFO)
+jieba.set_dictionary('dict.txt.big')
+
 from cjklib.dictionary import CEDICT
 c = CEDICT()
 
